@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa | Saine</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+            <h1>Pesquisa de Satisfação</h1>
+            <img src="assets/logo.png" alt="Logo Saine">
+        </div>
+        <form action="https://api.sheetmonkey.io/form/ruA5pxRzyJ7xGiyAXLtkej" method="post">
+            <label for="DATA CIRURGIA">Data da cirurgia:</label>
+            <input id="date" type="date" name="DATA CIRURGIA" required>
+            <label for="NOME PACIENTE">Nome do paciente:</label>
+            <input id="name" type="text" name="NOME PACIENTE" required>
+            <label for="TELEFONE">Tel. paciente:</label>
+            <input id="tel" type="tel" name="TELEFONE">
+            <label for="MEDICO">Médico:</label>
+            <input id="name_medic" type="text" name="MEDICO">
+            <label for="RELATO">Observação do paciente:</label>
+            <textarea name="RELATO"></textarea>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+            <input id="btn" type="submit" value="Submit"/>
+        </form>
+    </div>
+</body>
+</html>
